@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8ff; /* Very light purple */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #7e57c2; /* A more vibrant purple */
+}
+
+.hero {
+    background: linear-gradient(to right, #e0b0ff, #bb86fc); /* Calming purple gradient */
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero input[type="text"] {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    width: 70%;
+    max-width: 400px;
+}
+
+.browse-button {
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.browse-button:hover {
+    background-color: #673ab7;
+}
+
+.book-display {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.book-display h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fff;
+    color: #777;
+    border-top: 1px solid #eee;
+}
+
+/* General Styling for Rounded Corners */
+*, *::before, *::after {
+    border-radius: 10px; /* Apply to most elements */
+}
+
+/* Override for elements that shouldn't have rounded corners */
+nav ul, nav ul li a, .hero input[type="text"] {
+    border-radius: 0;
+}
+
